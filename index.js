@@ -8,6 +8,10 @@ import api from "./api/index.js"
 const app = express();
 const port = config.port;
 
+app.get('/',(req,res)=>
+{
+    res.send("hello world")
+}   )
 // app.use(passport.initialize())
 // app.use(passport.session())
 app.use("/api",api)
